@@ -26,3 +26,4 @@ flows_cred.json
 *.srl
 *.csr
 target/
+.file_activity_report.json
