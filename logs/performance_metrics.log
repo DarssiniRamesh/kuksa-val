@@ -774,3 +774,1377 @@
 2026-01-18 18:05:03,707 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 268, Duration: 0ms
 2026-01-18 18:05:03,895 - Knowledge - INFO - Saving knowledge to Redis...
 2026-01-18 18:05:04,220 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-18 19:06:22,968 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-18 19:06:23,294 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-18 19:06:23,476 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-18 19:06:23,645 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-18 19:06:24,527 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-18 19:06:24,723 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-18 19:06:24,900 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-18 19:06:26,421 - Knowledge - INFO - Persisted knowledge files in /app/data/T0015/307413/b4824bb/kuksa-val/.knowledge have been renamed to use .json
+2026-01-18 19:06:26,606 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:26,774 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:27,075 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:27,233 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:27,407 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/CMakeLists.txt
+2026-01-18 19:06:27,676 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:06:28,751 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/CMakeLists.txt, Duration: 884ms
+2026-01-18 19:06:28,944 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/CMakeLists.txt
+2026-01-18 19:06:29,134 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/CMakeLists.txt
+2026-01-18 19:06:29,295 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:29,481 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:29,726 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:29,925 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:30,084 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IVssDatabaseMock.hpp
+2026-01-18 19:06:30,357 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:06:30,810 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/IVssDatabaseMock.hpp, Duration: 271ms
+2026-01-18 19:06:31,022 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/IVssDatabaseMock.hpp
+2026-01-18 19:06:31,170 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IVssDatabaseMock.hpp
+2026-01-18 19:06:31,340 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:31,502 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:31,748 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:31,940 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:32,132 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/KuksavalUnitTest.cpp
+2026-01-18 19:06:32,407 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-18 19:06:32,859 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/KuksavalUnitTest.cpp, Duration: 272ms
+2026-01-18 19:06:33,017 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/KuksavalUnitTest.cpp
+2026-01-18 19:06:33,273 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/KuksavalUnitTest.cpp
+2026-01-18 19:06:33,448 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:33,641 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:33,921 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:34,092 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:34,255 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/pictures/README.md
+2026-01-18 19:06:34,571 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:06:34,925 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/pictures/README.md, Duration: 182ms
+2026-01-18 19:06:35,167 - Knowledge - INFO - persist search terms embedding for doc/pictures/README.md
+2026-01-18 19:06:35,375 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/pictures/README.md
+2026-01-18 19:06:35,578 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:35,740 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:36,030 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:36,209 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:36,401 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/server.py
+2026-01-18 19:06:36,657 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:06:37,182 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/server.py, Duration: 321ms
+2026-01-18 19:06:37,366 - Knowledge - INFO - persist search terms embedding for test/stresstest/server.py
+2026-01-18 19:06:37,563 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/server.py
+2026-01-18 19:06:37,751 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:37,960 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:38,234 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:38,455 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:38,688 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/README.md
+2026-01-18 19:06:38,990 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2026-01-18 19:06:39,413 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/README.md, Duration: 252ms
+2026-01-18 19:06:39,587 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/README.md
+2026-01-18 19:06:39,743 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/README.md
+2026-01-18 19:06:39,925 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:40,144 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:40,443 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:40,620 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:40,791 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/ssl_stream.hpp
+2026-01-18 19:06:41,084 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:06:41,486 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/ssl_stream.hpp, Duration: 208ms
+2026-01-18 19:06:41,646 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/ssl_stream.hpp
+2026-01-18 19:06:41,832 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/ssl_stream.hpp
+2026-01-18 19:06:42,033 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:42,249 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:42,505 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:42,742 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:42,968 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/wildcard_matching.md
+2026-01-18 19:06:43,252 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:06:43,738 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/wildcard_matching.md, Duration: 254ms
+2026-01-18 19:06:43,944 - Knowledge - INFO - persist search terms embedding for doc/wildcard_matching.md
+2026-01-18 19:06:44,104 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/wildcard_matching.md
+2026-01-18 19:06:44,282 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:44,463 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:44,747 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:44,895 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:45,063 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/client.py
+2026-01-18 19:06:45,393 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-18 19:06:45,823 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/client.py, Duration: 274ms
+2026-01-18 19:06:46,013 - Knowledge - INFO - persist search terms embedding for test/stresstest/client.py
+2026-01-18 19:06:46,188 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/client.py
+2026-01-18 19:06:46,394 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:46,618 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:46,858 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:47,025 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:47,217 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VSSTypeSanitizerTests.cpp
+2026-01-18 19:06:47,510 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:06:47,909 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/VSSTypeSanitizerTests.cpp, Duration: 205ms
+2026-01-18 19:06:48,059 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/VSSTypeSanitizerTests.cpp
+2026-01-18 19:06:48,309 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VSSTypeSanitizerTests.cpp
+2026-01-18 19:06:48,486 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:48,694 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:48,995 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:49,179 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:49,353 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/requirements.txt
+2026-01-18 19:06:49,608 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-18 19:06:49,967 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/s3/requirements.txt, Duration: 206ms
+2026-01-18 19:06:50,139 - Knowledge - INFO - persist search terms embedding for kuksa_apps/s3/requirements.txt
+2026-01-18 19:06:50,300 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/requirements.txt
+2026-01-18 19:06:50,492 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:50,700 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:50,981 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:51,186 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:51,393 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/AccessCheckerTests.cpp
+2026-01-18 19:06:51,696 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:06:52,117 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/AccessCheckerTests.cpp, Duration: 250ms
+2026-01-18 19:06:52,289 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/AccessCheckerTests.cpp
+2026-01-18 19:06:52,464 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/AccessCheckerTests.cpp
+2026-01-18 19:06:52,634 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:52,804 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:53,052 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:53,265 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:53,433 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/liveUpdateVSSTree.md
+2026-01-18 19:06:53,692 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2026-01-18 19:06:54,122 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/liveUpdateVSSTree.md, Duration: 229ms
+2026-01-18 19:06:54,320 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/liveUpdateVSSTree.md
+2026-01-18 19:06:54,518 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/liveUpdateVSSTree.md
+2026-01-18 19:06:54,739 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:54,948 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:55,188 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:55,354 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:55,561 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/config.ini
+2026-01-18 19:06:55,810 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 85ms
+2026-01-18 19:06:56,213 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/stresstest/config.ini, Duration: 202ms
+2026-01-18 19:06:56,393 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/stresstest/config.ini
+2026-01-18 19:06:56,589 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/config.ini
+2026-01-18 19:06:56,733 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:56,896 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:57,188 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:57,356 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:57,538 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/websocket-advanced.json
+2026-01-18 19:06:57,800 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:06:58,185 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/websocket-advanced.json, Duration: 207ms
+2026-01-18 19:06:58,348 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/websocket-advanced.json
+2026-01-18 19:06:58,550 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/websocket-advanced.json
+2026-01-18 19:06:58,727 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:58,925 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:59,158 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:06:59,325 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:06:59,518 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/boost.cmake
+2026-01-18 19:06:59,814 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:07:00,350 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/boost.cmake, Duration: 354ms
+2026-01-18 19:07:00,574 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/boost.cmake
+2026-01-18 19:07:00,754 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/boost.cmake
+2026-01-18 19:07:00,925 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:01,087 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:01,354 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:01,524 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:01,726 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/grpcHandler.cpp
+2026-01-18 19:07:01,963 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:07:02,361 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/grpcHandler.cpp, Duration: 210ms
+2026-01-18 19:07:02,522 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/grpcHandler.cpp
+2026-01-18 19:07:02,724 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/grpcHandler.cpp
+2026-01-18 19:07:02,906 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:03,087 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:03,427 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:03,595 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:03,786 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSPath.hpp
+2026-01-18 19:07:04,079 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:07:04,491 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VSSPath.hpp, Duration: 248ms
+2026-01-18 19:07:04,727 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VSSPath.hpp
+2026-01-18 19:07:04,915 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSPath.hpp
+2026-01-18 19:07:05,098 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:05,254 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:05,530 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:05,733 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:05,938 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/README.md
+2026-01-18 19:07:06,218 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:07:06,615 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/jwt/README.md, Duration: 192ms
+2026-01-18 19:07:06,788 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/jwt/README.md
+2026-01-18 19:07:07,003 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/README.md
+2026-01-18 19:07:07,200 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:07,400 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:07,682 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:07,903 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:08,070 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/SubscriptionHandlerTests.cpp
+2026-01-18 19:07:08,332 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-18 19:07:08,730 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/SubscriptionHandlerTests.cpp, Duration: 207ms
+2026-01-18 19:07:08,949 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/SubscriptionHandlerTests.cpp
+2026-01-18 19:07:09,149 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/SubscriptionHandlerTests.cpp
+2026-01-18 19:07:09,322 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:09,514 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:09,798 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:10,004 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:10,162 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/OverlayLoader.hpp
+2026-01-18 19:07:10,407 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:07:10,856 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/OverlayLoader.hpp, Duration: 270ms
+2026-01-18 19:07:11,032 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/OverlayLoader.hpp
+2026-01-18 19:07:11,224 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/OverlayLoader.hpp
+2026-01-18 19:07:11,394 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:11,627 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:11,885 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:12,093 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:12,340 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/ILogger.hpp
+2026-01-18 19:07:12,610 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:07:13,008 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/ILogger.hpp, Duration: 205ms
+2026-01-18 19:07:13,187 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/ILogger.hpp
+2026-01-18 19:07:13,363 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/ILogger.hpp
+2026-01-18 19:07:13,566 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:13,735 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:13,997 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:14,159 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:14,335 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/docker/collect-deployment-artifacts.sh
+2026-01-18 19:07:14,589 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-18 19:07:14,976 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/docker/collect-deployment-artifacts.sh, Duration: 225ms
+2026-01-18 19:07:15,152 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/docker/collect-deployment-artifacts.sh
+2026-01-18 19:07:15,329 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/docker/collect-deployment-artifacts.sh
+2026-01-18 19:07:15,530 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:15,706 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:15,959 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:16,161 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:16,323 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/BasicLogger.cpp
+2026-01-18 19:07:16,572 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-18 19:07:16,976 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/BasicLogger.cpp, Duration: 232ms
+2026-01-18 19:07:17,133 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/BasicLogger.cpp
+2026-01-18 19:07:17,369 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/BasicLogger.cpp
+2026-01-18 19:07:17,579 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:17,737 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:18,039 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:18,208 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:18,392 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/super-admin.json
+2026-01-18 19:07:18,654 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:07:19,108 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/jwt/super-admin.json, Duration: 296ms
+2026-01-18 19:07:19,311 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/jwt/super-admin.json
+2026-01-18 19:07:19,473 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/super-admin.json
+2026-01-18 19:07:19,643 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:19,813 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:20,136 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:20,338 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:20,560 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VssCommandProcessorTests.cpp
+2026-01-18 19:07:20,860 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:07:21,200 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/VssCommandProcessorTests.cpp, Duration: 181ms
+2026-01-18 19:07:21,375 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/VssCommandProcessorTests.cpp
+2026-01-18 19:07:21,600 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VssCommandProcessorTests.cpp
+2026-01-18 19:07:21,803 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:21,976 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:22,251 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:22,460 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:22,687 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/pyarrow_mapping.py
+2026-01-18 19:07:22,930 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:07:23,451 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/s3/pyarrow_mapping.py, Duration: 311ms
+2026-01-18 19:07:23,674 - Knowledge - INFO - persist search terms embedding for kuksa_apps/s3/pyarrow_mapping.py
+2026-01-18 19:07:23,916 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/pyarrow_mapping.py
+2026-01-18 19:07:24,090 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:24,270 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:24,512 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:24,733 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:24,935 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/pictures/genGif.sh
+2026-01-18 19:07:25,231 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-18 19:07:25,604 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/pictures/genGif.sh, Duration: 216ms
+2026-01-18 19:07:25,830 - Knowledge - INFO - persist search terms embedding for doc/pictures/genGif.sh
+2026-01-18 19:07:26,040 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/pictures/genGif.sh
+2026-01-18 19:07:26,217 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:26,418 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:26,699 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:26,863 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:27,069 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssDatabase.hpp
+2026-01-18 19:07:27,402 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 119ms
+2026-01-18 19:07:27,838 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VssDatabase.hpp, Duration: 230ms
+2026-01-18 19:07:27,994 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VssDatabase.hpp
+2026-01-18 19:07:28,178 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssDatabase.hpp
+2026-01-18 19:07:28,390 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:28,586 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:28,849 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:29,013 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:29,252 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/feeders.yml
+2026-01-18 19:07:29,536 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:07:29,977 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/feeders.yml, Duration: 246ms
+2026-01-18 19:07:30,156 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/feeders.yml
+2026-01-18 19:07:30,315 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/feeders.yml
+2026-01-18 19:07:30,516 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:30,678 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:30,935 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:31,114 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:31,296 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/AuthenticatorTests.cpp
+2026-01-18 19:07:31,594 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-18 19:07:31,990 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/AuthenticatorTests.cpp, Duration: 202ms
+2026-01-18 19:07:32,164 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/AuthenticatorTests.cpp
+2026-01-18 19:07:32,380 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/AuthenticatorTests.cpp
+2026-01-18 19:07:32,551 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:32,747 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:33,025 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:33,217 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:33,391 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/run_tests.sh
+2026-01-18 19:07:33,663 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:07:34,141 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/run_tests.sh, Duration: 294ms
+2026-01-18 19:07:34,342 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/run_tests.sh
+2026-01-18 19:07:34,528 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/run_tests.sh
+2026-01-18 19:07:34,755 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:34,910 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:35,175 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:35,342 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:35,502 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/docker/startkuksaval.sh
+2026-01-18 19:07:35,856 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 108ms
+2026-01-18 19:07:36,265 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/docker/startkuksaval.sh, Duration: 212ms
+2026-01-18 19:07:36,416 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/docker/startkuksaval.sh
+2026-01-18 19:07:36,607 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/docker/startkuksaval.sh
+2026-01-18 19:07:36,779 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:36,993 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:37,292 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:37,446 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:37,647 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/ISubscriptionHandlerMock.hpp
+2026-01-18 19:07:37,922 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 102ms
+2026-01-18 19:07:38,278 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/ISubscriptionHandlerMock.hpp, Duration: 194ms
+2026-01-18 19:07:38,445 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/ISubscriptionHandlerMock.hpp
+2026-01-18 19:07:38,659 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/ISubscriptionHandlerMock.hpp
+2026-01-18 19:07:38,827 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:38,996 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:39,292 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:39,460 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:39,625 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UpdateMetadataTest.cpp
+2026-01-18 19:07:39,907 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:07:40,293 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/UpdateMetadataTest.cpp, Duration: 217ms
+2026-01-18 19:07:40,451 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/UpdateMetadataTest.cpp
+2026-01-18 19:07:40,659 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UpdateMetadataTest.cpp
+2026-01-18 19:07:40,904 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:41,113 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:41,403 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:41,556 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:41,727 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/AccessChecker.hpp
+2026-01-18 19:07:41,992 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-18 19:07:42,423 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/AccessChecker.hpp, Duration: 266ms
+2026-01-18 19:07:42,638 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/AccessChecker.hpp
+2026-01-18 19:07:42,832 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/AccessChecker.hpp
+2026-01-18 19:07:43,022 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:43,240 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:43,482 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:43,679 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:43,852 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/git_watcher.cmake
+2026-01-18 19:07:44,132 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:07:44,510 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/git_watcher.cmake, Duration: 182ms
+2026-01-18 19:07:44,702 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/git_watcher.cmake
+2026-01-18 19:07:44,864 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/git_watcher.cmake
+2026-01-18 19:07:45,034 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:45,198 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:45,477 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:45,702 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:45,912 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VssDatabaseTests.cpp
+2026-01-18 19:07:46,152 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-18 19:07:46,586 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/VssDatabaseTests.cpp, Duration: 242ms
+2026-01-18 19:07:46,794 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/VssDatabaseTests.cpp
+2026-01-18 19:07:46,979 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VssDatabaseTests.cpp
+2026-01-18 19:07:47,177 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:47,330 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:47,601 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:47,782 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:47,963 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IPublisher.hpp
+2026-01-18 19:07:48,287 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2026-01-18 19:07:48,903 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IPublisher.hpp, Duration: 388ms
+2026-01-18 19:07:49,121 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IPublisher.hpp
+2026-01-18 19:07:49,284 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IPublisher.hpp
+2026-01-18 19:07:49,448 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:49,616 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:49,877 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:50,058 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:50,273 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/protocol/support.md
+2026-01-18 19:07:50,537 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2026-01-18 19:07:50,966 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/protocol/support.md, Duration: 248ms
+2026-01-18 19:07:51,212 - Knowledge - INFO - persist search terms embedding for doc/protocol/support.md
+2026-01-18 19:07:51,388 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/protocol/support.md
+2026-01-18 19:07:51,565 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:51,780 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:52,041 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:52,227 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:52,378 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/single-read.json
+2026-01-18 19:07:52,635 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:07:53,034 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/jwt/single-read.json, Duration: 222ms
+2026-01-18 19:07:53,239 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/jwt/single-read.json
+2026-01-18 19:07:53,427 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/single-read.json
+2026-01-18 19:07:53,644 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:53,830 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:54,146 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:54,350 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:54,525 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IAuthenticatorMock.hpp
+2026-01-18 19:07:54,793 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:07:55,262 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/IAuthenticatorMock.hpp, Duration: 258ms
+2026-01-18 19:07:55,436 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/IAuthenticatorMock.hpp
+2026-01-18 19:07:55,685 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IAuthenticatorMock.hpp
+2026-01-18 19:07:55,879 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:56,044 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:56,370 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:56,549 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:56,712 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/readme.md
+2026-01-18 19:07:56,978 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-18 19:07:57,362 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/readme.md, Duration: 197ms
+2026-01-18 19:07:57,516 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/readme.md
+2026-01-18 19:07:57,682 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/readme.md
+2026-01-18 19:07:57,848 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:58,018 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:58,317 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:07:58,537 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:07:58,719 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandUnsubscribe.cpp
+2026-01-18 19:07:59,004 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:07:59,397 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssCommandUnsubscribe.cpp, Duration: 183ms
+2026-01-18 19:07:59,577 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssCommandUnsubscribe.cpp
+2026-01-18 19:07:59,752 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandUnsubscribe.cpp
+2026-01-18 19:07:59,946 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:00,111 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:00,375 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:00,584 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:00,748 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssDatabase_Record.hpp
+2026-01-18 19:08:01,031 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:08:01,417 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VssDatabase_Record.hpp, Duration: 206ms
+2026-01-18 19:08:01,587 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VssDatabase_Record.hpp
+2026-01-18 19:08:01,763 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssDatabase_Record.hpp
+2026-01-18 19:08:01,942 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:02,114 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:02,392 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:02,583 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:02,735 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/config.ini
+2026-01-18 19:08:03,003 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:08:03,420 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/s3/config.ini, Duration: 236ms
+2026-01-18 19:08:03,581 - Knowledge - INFO - persist search terms embedding for kuksa_apps/s3/config.ini
+2026-01-18 19:08:03,785 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/config.ini
+2026-01-18 19:08:03,982 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:04,201 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:04,475 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:04,666 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:04,858 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VSSPathTests.cpp
+2026-01-18 19:08:05,167 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:08:05,618 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/VSSPathTests.cpp, Duration: 251ms
+2026-01-18 19:08:05,813 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/VSSPathTests.cpp
+2026-01-18 19:08:06,014 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/VSSPathTests.cpp
+2026-01-18 19:08:06,192 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:06,349 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:06,581 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:06,759 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:06,970 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/cmake.md
+2026-01-18 19:08:07,270 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:08:07,690 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/cmake.md, Duration: 224ms
+2026-01-18 19:08:07,848 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/cmake.md
+2026-01-18 19:08:08,086 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/cmake.md
+2026-01-18 19:08:08,284 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:08,489 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:08,750 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:08,945 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:09,115 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/__init__.py
+2026-01-18 19:08:09,386 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:08:09,819 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/__init__.py, Duration: 273ms
+2026-01-18 19:08:09,980 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/__init__.py
+2026-01-18 19:08:10,154 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/__init__.py
+2026-01-18 19:08:10,324 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:10,486 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:10,756 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:10,952 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:11,192 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/exception.hpp
+2026-01-18 19:08:11,476 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:08:11,948 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/exception.hpp, Duration: 266ms
+2026-01-18 19:08:12,144 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/exception.hpp
+2026-01-18 19:08:12,296 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/exception.hpp
+2026-01-18 19:08:12,482 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:12,648 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:12,986 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:13,199 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:13,371 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSRequestValidator.hpp
+2026-01-18 19:08:13,629 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-18 19:08:14,083 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VSSRequestValidator.hpp, Duration: 186ms
+2026-01-18 19:08:14,251 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VSSRequestValidator.hpp
+2026-01-18 19:08:14,413 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSRequestValidator.hpp
+2026-01-18 19:08:14,611 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:14,779 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:15,065 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:15,264 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:15,452 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/config.ini
+2026-01-18 19:08:15,753 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:08:16,132 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/config.ini, Duration: 210ms
+2026-01-18 19:08:16,349 - Knowledge - INFO - persist search terms embedding for test/stresstest/config.ini
+2026-01-18 19:08:16,517 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/config.ini
+2026-01-18 19:08:16,735 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:16,931 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:17,231 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:17,463 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:17,630 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/config.ini
+2026-01-18 19:08:17,962 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 130ms
+2026-01-18 19:08:18,321 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/config.ini, Duration: 183ms
+2026-01-18 19:08:18,508 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/config.ini
+2026-01-18 19:08:18,686 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/config.ini
+2026-01-18 19:08:18,858 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:19,053 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:19,327 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:19,514 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:19,722 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/Authenticator.hpp
+2026-01-18 19:08:20,002 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 102ms
+2026-01-18 19:08:20,337 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/Authenticator.hpp, Duration: 174ms
+2026-01-18 19:08:20,542 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/Authenticator.hpp
+2026-01-18 19:08:20,750 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/Authenticator.hpp
+2026-01-18 19:08:20,977 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:21,173 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:21,436 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:21,606 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:21,767 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IAccessCheckerMock.hpp
+2026-01-18 19:08:22,019 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:08:22,377 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/IAccessCheckerMock.hpp, Duration: 186ms
+2026-01-18 19:08:22,575 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/IAccessCheckerMock.hpp
+2026-01-18 19:08:22,733 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IAccessCheckerMock.hpp
+2026-01-18 19:08:22,900 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:23,055 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:23,305 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:23,496 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:23,689 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_3.1.1.json
+2026-01-18 19:08:23,966 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:08:24,382 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_3.1.1.json, Duration: 216ms
+2026-01-18 19:08:24,574 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_3.1.1.json
+2026-01-18 19:08:24,746 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_3.1.1.json
+2026-01-18 19:08:24,973 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:25,167 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:25,481 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:25,664 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:25,825 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.1.json
+2026-01-18 19:08:26,112 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-18 19:08:26,801 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_2.1.json, Duration: 507ms
+2026-01-18 19:08:26,948 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_2.1.json
+2026-01-18 19:08:27,136 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.1.json
+2026-01-18 19:08:27,307 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:27,512 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:27,846 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:28,040 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:28,237 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/JsonResponses.cpp
+2026-01-18 19:08:28,532 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-18 19:08:28,922 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/JsonResponses.cpp, Duration: 202ms
+2026-01-18 19:08:29,108 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/JsonResponses.cpp
+2026-01-18 19:08:29,341 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/JsonResponses.cpp
+2026-01-18 19:08:29,536 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:29,730 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:30,029 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:30,235 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:30,404 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/Readme.md
+2026-01-18 19:08:30,671 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:08:31,016 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/Readme.md, Duration: 193ms
+2026-01-18 19:08:31,185 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/Readme.md
+2026-01-18 19:08:31,376 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/Readme.md
+2026-01-18 19:08:31,552 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:31,700 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:31,952 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:32,116 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:32,325 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IServerMock.hpp
+2026-01-18 19:08:32,590 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:08:33,019 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/IServerMock.hpp, Duration: 260ms
+2026-01-18 19:08:33,179 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/IServerMock.hpp
+2026-01-18 19:08:33,327 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IServerMock.hpp
+2026-01-18 19:08:33,514 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:33,690 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:33,961 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:34,128 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:34,300 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_3.0.json
+2026-01-18 19:08:34,557 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-18 19:08:35,108 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_3.0.json, Duration: 310ms
+2026-01-18 19:08:35,281 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_3.0.json
+2026-01-18 19:08:35,475 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_3.0.json
+2026-01-18 19:08:35,639 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:35,832 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:36,076 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:36,253 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:36,414 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UnitTestHelpers.hpp
+2026-01-18 19:08:36,678 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:08:37,172 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/UnitTestHelpers.hpp, Duration: 313ms
+2026-01-18 19:08:37,381 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/UnitTestHelpers.hpp
+2026-01-18 19:08:37,540 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UnitTestHelpers.hpp
+2026-01-18 19:08:37,725 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:37,922 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:38,176 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:38,341 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:38,550 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssCommandProcessor.hpp
+2026-01-18 19:08:38,822 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:08:39,236 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VssCommandProcessor.hpp, Duration: 208ms
+2026-01-18 19:08:39,428 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VssCommandProcessor.hpp
+2026-01-18 19:08:39,597 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VssCommandProcessor.hpp
+2026-01-18 19:08:39,808 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:39,974 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:40,230 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:40,436 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:40,619 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/README.md
+2026-01-18 19:08:40,916 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:08:41,336 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/README.md, Duration: 210ms
+2026-01-18 19:08:41,556 - Knowledge - INFO - persist search terms embedding for kuksa_apps/README.md
+2026-01-18 19:08:41,743 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/README.md
+2026-01-18 19:08:41,947 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:42,108 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:42,390 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:42,562 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:42,759 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/s3_uploader.py
+2026-01-18 19:08:43,032 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 109ms
+2026-01-18 19:08:43,467 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/s3/s3_uploader.py, Duration: 261ms
+2026-01-18 19:08:43,620 - Knowledge - INFO - persist search terms embedding for kuksa_apps/s3/s3_uploader.py
+2026-01-18 19:08:43,861 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/s3_uploader.py
+2026-01-18 19:08:44,076 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:44,278 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:44,576 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:44,815 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:44,967 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/broker.py
+2026-01-18 19:08:45,267 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 113ms
+2026-01-18 19:08:45,725 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/broker.py, Duration: 261ms
+2026-01-18 19:08:45,934 - Knowledge - INFO - persist search terms embedding for test/stresstest/broker.py
+2026-01-18 19:08:46,136 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/broker.py
+2026-01-18 19:08:46,330 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:46,498 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:46,767 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:46,957 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:47,111 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/usage.md
+2026-01-18 19:08:47,360 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:08:48,021 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/usage.md, Duration: 512ms
+2026-01-18 19:08:48,218 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/usage.md
+2026-01-18 19:08:48,416 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/usage.md
+2026-01-18 19:08:48,621 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:48,824 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:49,094 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:49,280 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:49,483 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/SubscriptionHandler.hpp
+2026-01-18 19:08:49,779 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 114ms
+2026-01-18 19:08:50,154 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/SubscriptionHandler.hpp, Duration: 202ms
+2026-01-18 19:08:50,331 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/SubscriptionHandler.hpp
+2026-01-18 19:08:50,496 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/SubscriptionHandler.hpp
+2026-01-18 19:08:50,682 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:50,876 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:51,129 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:51,323 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:51,541 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/WebSockHttpFlexServer.cpp
+2026-01-18 19:08:51,824 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:08:52,330 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/WebSockHttpFlexServer.cpp, Duration: 318ms
+2026-01-18 19:08:52,522 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/WebSockHttpFlexServer.cpp
+2026-01-18 19:08:52,680 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/WebSockHttpFlexServer.cpp
+2026-01-18 19:08:52,853 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:53,079 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:53,353 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:53,559 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:53,758 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/stressClient.py
+2026-01-18 19:08:54,041 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:08:54,494 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/stresstest/stressClient.py, Duration: 250ms
+2026-01-18 19:08:54,656 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/stresstest/stressClient.py
+2026-01-18 19:08:54,865 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/stressClient.py
+2026-01-18 19:08:55,037 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:55,220 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:55,537 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:55,699 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:55,871 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/MQTTPublisher.cpp
+2026-01-18 19:08:56,159 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:08:56,593 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/MQTTPublisher.cpp, Duration: 267ms
+2026-01-18 19:08:56,803 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/MQTTPublisher.cpp
+2026-01-18 19:08:56,980 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/MQTTPublisher.cpp
+2026-01-18 19:08:57,192 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:57,380 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:57,640 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:57,850 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:58,029 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/jwt.md
+2026-01-18 19:08:58,341 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-18 19:08:58,790 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/jwt.md, Duration: 274ms
+2026-01-18 19:08:59,006 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/jwt.md
+2026-01-18 19:08:59,196 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/jwt.md
+2026-01-18 19:08:59,384 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:59,554 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:08:59,800 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:08:59,993 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:00,182 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/build-docker.md
+2026-01-18 19:09:00,526 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:09:01,060 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/build-docker.md, Duration: 342ms
+2026-01-18 19:09:01,253 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/build-docker.md
+2026-01-18 19:09:01,411 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/build-docker.md
+2026-01-18 19:09:01,598 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:01,809 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:02,103 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:02,279 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:02,473 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/flows.json
+2026-01-18 19:09:02,815 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 132ms
+2026-01-18 19:09:03,258 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/mqtt/flows.json, Duration: 267ms
+2026-01-18 19:09:03,506 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/mqtt/flows.json
+2026-01-18 19:09:03,710 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/flows.json
+2026-01-18 19:09:03,931 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:04,114 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:04,417 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:04,588 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:04,787 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandSet.cpp
+2026-01-18 19:09:05,113 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 118ms
+2026-01-18 19:09:05,575 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssCommandSet.cpp, Duration: 224ms
+2026-01-18 19:09:05,765 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssCommandSet.cpp
+2026-01-18 19:09:05,963 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandSet.cpp
+2026-01-18 19:09:06,118 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:06,305 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:06,535 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:06,704 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:06,905 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_data_broker/authorization.md
+2026-01-18 19:09:07,198 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:09:07,576 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_data_broker/authorization.md, Duration: 213ms
+2026-01-18 19:09:07,737 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_data_broker/authorization.md
+2026-01-18 19:09:07,911 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_data_broker/authorization.md
+2026-01-18 19:09:08,094 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:08,264 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:08,523 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:08,712 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:08,916 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/all-read-write.json
+2026-01-18 19:09:09,243 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-18 19:09:09,674 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/jwt/all-read-write.json, Duration: 271ms
+2026-01-18 19:09:09,857 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/jwt/all-read-write.json
+2026-01-18 19:09:10,047 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/all-read-write.json
+2026-01-18 19:09:10,232 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:10,448 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:10,770 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:10,998 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:11,159 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSTypeSanitizer.cpp
+2026-01-18 19:09:11,459 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 108ms
+2026-01-18 19:09:11,834 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VSSTypeSanitizer.cpp, Duration: 212ms
+2026-01-18 19:09:12,007 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VSSTypeSanitizer.cpp
+2026-01-18 19:09:12,211 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSTypeSanitizer.cpp
+2026-01-18 19:09:12,370 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:12,566 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:12,815 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:12,965 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:13,157 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/AccessChecker.cpp
+2026-01-18 19:09:13,429 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 99ms
+2026-01-18 19:09:13,809 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/AccessChecker.cpp, Duration: 217ms
+2026-01-18 19:09:14,013 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/AccessChecker.cpp
+2026-01-18 19:09:14,183 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/AccessChecker.cpp
+2026-01-18 19:09:14,342 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:14,554 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:14,778 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:15,020 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:15,162 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/Readme.md
+2026-01-18 19:09:15,451 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:09:15,824 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/stresstest/Readme.md, Duration: 207ms
+2026-01-18 19:09:16,043 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/stresstest/Readme.md
+2026-01-18 19:09:16,249 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/Readme.md
+2026-01-18 19:09:16,414 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:16,584 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:16,824 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:17,018 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:17,196 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/NOTICE.md
+2026-01-18 19:09:17,446 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 84ms
+2026-01-18 19:09:18,036 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: NOTICE.md, Duration: 410ms
+2026-01-18 19:09:18,250 - Knowledge - INFO - persist search terms embedding for NOTICE.md
+2026-01-18 19:09:18,477 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/NOTICE.md
+2026-01-18 19:09:18,653 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:18,848 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:19,148 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:19,350 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:19,518 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssDatabase_Record.cpp
+2026-01-18 19:09:19,833 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 113ms
+2026-01-18 19:09:20,219 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssDatabase_Record.cpp, Duration: 209ms
+2026-01-18 19:09:20,413 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssDatabase_Record.cpp
+2026-01-18 19:09:20,603 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssDatabase_Record.cpp
+2026-01-18 19:09:20,782 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:20,957 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:21,194 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:21,357 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:21,520 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/system-architecture.md
+2026-01-18 19:09:21,835 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2026-01-18 19:09:22,247 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/system-architecture.md, Duration: 233ms
+2026-01-18 19:09:22,405 - Knowledge - INFO - persist search terms embedding for doc/system-architecture.md
+2026-01-18 19:09:22,590 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/system-architecture.md
+2026-01-18 19:09:22,759 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:22,977 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:23,249 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:23,409 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:23,612 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/requirements.txt
+2026-01-18 19:09:23,860 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-18 19:09:24,233 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_certificates/jwt/requirements.txt, Duration: 193ms
+2026-01-18 19:09:24,425 - Knowledge - INFO - persist search terms embedding for kuksa_certificates/jwt/requirements.txt
+2026-01-18 19:09:24,624 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_certificates/jwt/requirements.txt
+2026-01-18 19:09:24,810 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:25,018 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:25,330 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:25,535 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:25,804 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/Gen2SetTests.cpp
+2026-01-18 19:09:26,125 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:09:26,574 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/Gen2SetTests.cpp, Duration: 263ms
+2026-01-18 19:09:26,732 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/Gen2SetTests.cpp
+2026-01-18 19:09:26,897 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/Gen2SetTests.cpp
+2026-01-18 19:09:27,123 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:27,299 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:27,607 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:27,789 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:27,973 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/docker-compose.yml
+2026-01-18 19:09:28,237 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:09:28,642 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/docker-compose.yml, Duration: 228ms
+2026-01-18 19:09:28,796 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/docker-compose.yml
+2026-01-18 19:09:28,959 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/docker-compose.yml
+2026-01-18 19:09:29,184 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:29,395 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:29,680 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:29,888 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:30,049 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/grpcHandler.hpp
+2026-01-18 19:09:30,353 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-18 19:09:30,783 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/grpcHandler.hpp, Duration: 239ms
+2026-01-18 19:09:30,972 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/grpcHandler.hpp
+2026-01-18 19:09:31,166 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/grpcHandler.hpp
+2026-01-18 19:09:31,364 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:31,559 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:31,856 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:32,011 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:32,176 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSRequestValidator.cpp
+2026-01-18 19:09:32,495 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-18 19:09:32,963 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VSSRequestValidator.cpp, Duration: 278ms
+2026-01-18 19:09:33,148 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VSSRequestValidator.cpp
+2026-01-18 19:09:33,322 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSRequestValidator.cpp
+2026-01-18 19:09:33,490 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:33,714 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:34,024 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:34,209 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:34,406 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_data_broker/broker.md
+2026-01-18 19:09:34,673 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-18 19:09:35,021 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_data_broker/broker.md, Duration: 175ms
+2026-01-18 19:09:35,175 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_data_broker/broker.md
+2026-01-18 19:09:35,366 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_data_broker/broker.md
+2026-01-18 19:09:35,571 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:35,742 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:36,040 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:36,198 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:36,407 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/Authenticator.cpp
+2026-01-18 19:09:36,659 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:09:37,031 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/Authenticator.cpp, Duration: 207ms
+2026-01-18 19:09:37,203 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/Authenticator.cpp
+2026-01-18 19:09:37,376 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/Authenticator.cpp
+2026-01-18 19:09:37,535 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:37,741 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:38,003 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:38,204 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:38,400 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IVssDatabase.hpp
+2026-01-18 19:09:38,670 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-18 19:09:39,036 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IVssDatabase.hpp, Duration: 219ms
+2026-01-18 19:09:39,201 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IVssDatabase.hpp
+2026-01-18 19:09:39,450 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IVssDatabase.hpp
+2026-01-18 19:09:39,611 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:39,826 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:40,068 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:40,222 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:40,441 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/deployment.md
+2026-01-18 19:09:40,754 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2026-01-18 19:09:41,140 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/deployment.md, Duration: 188ms
+2026-01-18 19:09:41,304 - Knowledge - INFO - persist search terms embedding for doc/deployment.md
+2026-01-18 19:09:41,467 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/deployment.md
+2026-01-18 19:09:41,648 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:41,818 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:42,117 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:42,298 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:42,494 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/KuksavalUnitTest.hpp
+2026-01-18 19:09:42,811 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-18 19:09:43,247 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/KuksavalUnitTest.hpp, Duration: 238ms
+2026-01-18 19:09:43,413 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/KuksavalUnitTest.hpp
+2026-01-18 19:09:43,670 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/KuksavalUnitTest.hpp
+2026-01-18 19:09:43,865 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:44,048 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:44,343 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:44,565 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:44,747 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/protos/README.md
+2026-01-18 19:09:45,013 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 106ms
+2026-01-18 19:09:45,471 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/protos/README.md, Duration: 239ms
+2026-01-18 19:09:45,666 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/protos/README.md
+2026-01-18 19:09:45,823 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/protos/README.md
+2026-01-18 19:09:46,033 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:46,215 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:46,506 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:46,688 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:46,866 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.0.json
+2026-01-18 19:09:47,141 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 98ms
+2026-01-18 19:09:47,621 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_2.0.json, Duration: 276ms
+2026-01-18 19:09:47,789 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_2.0.json
+2026-01-18 19:09:47,982 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.0.json
+2026-01-18 19:09:48,197 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:48,387 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:48,694 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:48,892 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:49,056 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandProcessor.cpp
+2026-01-18 19:09:49,358 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:09:49,724 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssCommandProcessor.cpp, Duration: 194ms
+2026-01-18 19:09:49,956 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssCommandProcessor.cpp
+2026-01-18 19:09:50,191 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandProcessor.cpp
+2026-01-18 19:09:50,392 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:50,547 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:50,825 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:51,026 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:51,225 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandGet.cpp
+2026-01-18 19:09:51,502 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:09:51,942 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssCommandGet.cpp, Duration: 284ms
+2026-01-18 19:09:52,120 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssCommandGet.cpp
+2026-01-18 19:09:52,290 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandGet.cpp
+2026-01-18 19:09:52,450 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:52,642 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:52,956 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:53,111 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:53,294 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/BasicLogger.hpp
+2026-01-18 19:09:53,572 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:09:53,942 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/BasicLogger.hpp, Duration: 204ms
+2026-01-18 19:09:54,153 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/BasicLogger.hpp
+2026-01-18 19:09:54,500 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/BasicLogger.hpp
+2026-01-18 19:09:54,674 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:54,843 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:55,079 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:55,261 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:55,443 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/README.md
+2026-01-18 19:09:55,680 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-18 19:09:56,039 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: README.md, Duration: 199ms
+2026-01-18 19:09:56,230 - Knowledge - INFO - persist search terms embedding for README.md
+2026-01-18 19:09:56,411 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/README.md
+2026-01-18 19:09:56,602 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:56,791 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:57,051 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:57,232 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:57,432 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/grpc.cmake
+2026-01-18 19:09:57,728 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 106ms
+2026-01-18 19:09:58,329 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/grpc.cmake, Duration: 411ms
+2026-01-18 19:09:58,504 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/grpc.cmake
+2026-01-18 19:09:58,674 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/grpc.cmake
+2026-01-18 19:09:58,864 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:59,074 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:59,371 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:09:59,527 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:09:59,726 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/stresstest.py
+2026-01-18 19:09:59,993 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:10:00,371 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/stresstest.py, Duration: 193ms
+2026-01-18 19:10:00,527 - Knowledge - INFO - persist search terms embedding for test/stresstest/stresstest.py
+2026-01-18 19:10:00,707 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/stresstest.py
+2026-01-18 19:10:00,908 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:01,085 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:01,332 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:01,518 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:01,728 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IPublisherMock.hpp
+2026-01-18 19:10:02,087 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 185ms
+2026-01-18 19:10:02,589 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/IPublisherMock.hpp, Duration: 294ms
+2026-01-18 19:10:02,763 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/IPublisherMock.hpp
+2026-01-18 19:10:02,972 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/IPublisherMock.hpp
+2026-01-18 19:10:03,153 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:03,360 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:03,611 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:03,788 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:03,984 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/subscriber.py
+2026-01-18 19:10:04,289 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 139ms
+2026-01-18 19:10:04,755 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/subscriber.py, Duration: 284ms
+2026-01-18 19:10:04,906 - Knowledge - INFO - persist search terms embedding for test/stresstest/subscriber.py
+2026-01-18 19:10:05,112 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/subscriber.py
+2026-01-18 19:10:05,282 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:05,471 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:05,744 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:05,963 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:06,128 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/Gen2GetTests.cpp
+2026-01-18 19:10:06,450 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 108ms
+2026-01-18 19:10:07,002 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/Gen2GetTests.cpp, Duration: 332ms
+2026-01-18 19:10:07,163 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/Gen2GetTests.cpp
+2026-01-18 19:10:07,338 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/Gen2GetTests.cpp
+2026-01-18 19:10:07,514 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:07,681 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:07,963 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:08,132 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:08,327 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/SubscriptionHandler.cpp
+2026-01-18 19:10:08,652 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 123ms
+2026-01-18 19:10:09,064 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/SubscriptionHandler.cpp, Duration: 240ms
+2026-01-18 19:10:09,258 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/SubscriptionHandler.cpp
+2026-01-18 19:10:09,428 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/SubscriptionHandler.cpp
+2026-01-18 19:10:09,652 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:09,848 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:10,121 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:10,304 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:10,497 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/terminology.md
+2026-01-18 19:10:10,775 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:10:11,175 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/terminology.md, Duration: 221ms
+2026-01-18 19:10:11,355 - Knowledge - INFO - persist search terms embedding for doc/terminology.md
+2026-01-18 19:10:11,518 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/terminology.md
+2026-01-18 19:10:11,720 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:11,953 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:12,282 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:12,490 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:12,652 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UpdateVSSTreeTest.cpp
+2026-01-18 19:10:12,920 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-18 19:10:13,400 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/UpdateVSSTreeTest.cpp, Duration: 300ms
+2026-01-18 19:10:13,604 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/UpdateVSSTreeTest.cpp
+2026-01-18 19:10:13,790 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/UpdateVSSTreeTest.cpp
+2026-01-18 19:10:13,968 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:14,149 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:14,429 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:14,598 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:14,839 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/stress.py
+2026-01-18 19:10:15,168 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 121ms
+2026-01-18 19:10:15,564 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/stress.py, Duration: 211ms
+2026-01-18 19:10:15,807 - Knowledge - INFO - persist search terms embedding for test/stresstest/stress.py
+2026-01-18 19:10:15,970 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/stress.py
+2026-01-18 19:10:16,175 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:16,336 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:16,582 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:16,767 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:16,932 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/run-docker.md
+2026-01-18 19:10:17,211 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:10:17,553 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/KUKSA.val_server/run-docker.md, Duration: 182ms
+2026-01-18 19:10:17,714 - Knowledge - INFO - persist search terms embedding for doc/KUKSA.val_server/run-docker.md
+2026-01-18 19:10:17,903 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/KUKSA.val_server/run-docker.md
+2026-01-18 19:10:18,150 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:18,354 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:18,638 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:18,836 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:19,024 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/visconf.hpp
+2026-01-18 19:10:19,306 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2026-01-18 19:10:19,727 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/visconf.hpp, Duration: 219ms
+2026-01-18 19:10:19,890 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/visconf.hpp
+2026-01-18 19:10:20,089 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/visconf.hpp
+2026-01-18 19:10:20,301 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:20,477 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:20,791 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:21,005 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:21,171 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/readme.md
+2026-01-18 19:10:21,448 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 83ms
+2026-01-18 19:10:21,881 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/s3/readme.md, Duration: 222ms
+2026-01-18 19:10:22,100 - Knowledge - INFO - persist search terms embedding for kuksa_apps/s3/readme.md
+2026-01-18 19:10:22,300 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/s3/readme.md
+2026-01-18 19:10:22,515 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:22,730 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:22,955 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:23,142 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:23,329 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/server-vs-broker.md
+2026-01-18 19:10:23,633 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-18 19:10:24,092 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/server-vs-broker.md, Duration: 246ms
+2026-01-18 19:10:24,276 - Knowledge - INFO - persist search terms embedding for doc/server-vs-broker.md
+2026-01-18 19:10:24,453 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/server-vs-broker.md
+2026-01-18 19:10:24,690 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:24,886 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:25,151 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:25,360 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:25,568 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSPath.cpp
+2026-01-18 19:10:25,835 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 104ms
+2026-01-18 19:10:26,270 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VSSPath.cpp, Duration: 214ms
+2026-01-18 19:10:26,459 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VSSPath.cpp
+2026-01-18 19:10:26,672 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VSSPath.cpp
+2026-01-18 19:10:26,836 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:26,993 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:27,302 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:27,476 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:27,713 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/protocol/README.md
+2026-01-18 19:10:28,125 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-18 19:10:28,639 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/protocol/README.md, Duration: 306ms
+2026-01-18 19:10:28,849 - Knowledge - INFO - persist search terms embedding for doc/protocol/README.md
+2026-01-18 19:10:29,031 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/protocol/README.md
+2026-01-18 19:10:29,262 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:29,446 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:29,805 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:29,959 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:30,167 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/KuksaChannel.hpp
+2026-01-18 19:10:30,487 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 112ms
+2026-01-18 19:10:30,854 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/KuksaChannel.hpp, Duration: 221ms
+2026-01-18 19:10:31,053 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/KuksaChannel.hpp
+2026-01-18 19:10:31,252 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/KuksaChannel.hpp
+2026-01-18 19:10:31,437 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:31,648 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:31,953 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:32,122 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:32,390 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/codecov.yml
+2026-01-18 19:10:32,681 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 113ms
+2026-01-18 19:10:33,110 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: codecov.yml, Duration: 208ms
+2026-01-18 19:10:33,303 - Knowledge - INFO - persist search terms embedding for codecov.yml
+2026-01-18 19:10:33,513 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/codecov.yml
+2026-01-18 19:10:33,674 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:33,850 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:34,103 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:34,295 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:34,482 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/OverlayLoader.cpp
+2026-01-18 19:10:34,768 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 110ms
+2026-01-18 19:10:35,144 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/OverlayLoader.cpp, Duration: 208ms
+2026-01-18 19:10:35,308 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/OverlayLoader.cpp
+2026-01-18 19:10:35,510 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/OverlayLoader.cpp
+2026-01-18 19:10:35,667 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:35,815 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:36,122 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:36,284 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:36,471 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IServer.hpp
+2026-01-18 19:10:36,756 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 111ms
+2026-01-18 19:10:37,176 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IServer.hpp, Duration: 236ms
+2026-01-18 19:10:37,348 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IServer.hpp
+2026-01-18 19:10:37,528 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IServer.hpp
+2026-01-18 19:10:37,691 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:37,889 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:38,174 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:38,372 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:38,546 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IAccessChecker.hpp
+2026-01-18 19:10:38,808 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 95ms
+2026-01-18 19:10:39,207 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IAccessChecker.hpp, Duration: 207ms
+2026-01-18 19:10:39,383 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IAccessChecker.hpp
+2026-01-18 19:10:39,587 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IAccessChecker.hpp
+2026-01-18 19:10:39,770 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:39,969 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:40,214 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:40,419 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:40,612 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssDatabase.cpp
+2026-01-18 19:10:40,913 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 134ms
+2026-01-18 19:10:41,370 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssDatabase.cpp, Duration: 291ms
+2026-01-18 19:10:41,534 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssDatabase.cpp
+2026-01-18 19:10:41,718 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssDatabase.cpp
+2026-01-18 19:10:41,975 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:42,155 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:42,415 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:42,676 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:42,851 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/CMakeLists.txt
+2026-01-18 19:10:43,153 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:10:43,585 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/CMakeLists.txt, Duration: 245ms
+2026-01-18 19:10:43,751 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/CMakeLists.txt
+2026-01-18 19:10:43,959 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/CMakeLists.txt
+2026-01-18 19:10:44,152 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:44,341 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:44,568 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:44,732 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:44,915 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/README.md
+2026-01-18 19:10:45,192 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 94ms
+2026-01-18 19:10:45,651 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/README.md, Duration: 218ms
+2026-01-18 19:10:45,864 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/README.md
+2026-01-18 19:10:46,082 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/README.md
+2026-01-18 19:10:46,254 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:46,457 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:46,764 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:46,964 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:47,203 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSRequestJsonSchema.hpp
+2026-01-18 19:10:47,457 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 100ms
+2026-01-18 19:10:47,894 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/VSSRequestJsonSchema.hpp, Duration: 271ms
+2026-01-18 19:10:48,055 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/VSSRequestJsonSchema.hpp
+2026-01-18 19:10:48,237 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/VSSRequestJsonSchema.hpp
+2026-01-18 19:10:48,414 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:48,611 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:48,915 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:49,099 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:49,273 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/tls.md
+2026-01-18 19:10:49,548 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-18 19:10:49,924 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/tls.md, Duration: 192ms
+2026-01-18 19:10:50,088 - Knowledge - INFO - persist search terms embedding for doc/tls.md
+2026-01-18 19:10:50,298 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/tls.md
+2026-01-18 19:10:50,479 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:50,698 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:50,969 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:51,145 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:51,313 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandSubscribe.cpp
+2026-01-18 19:10:51,610 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:10:52,037 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/VssCommandSubscribe.cpp, Duration: 256ms
+2026-01-18 19:10:52,222 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/VssCommandSubscribe.cpp
+2026-01-18 19:10:52,433 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/VssCommandSubscribe.cpp
+2026-01-18 19:10:52,634 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:52,819 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:53,099 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:53,320 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:53,522 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/ISubscriptionHandler.hpp
+2026-01-18 19:10:53,805 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 90ms
+2026-01-18 19:10:54,170 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/ISubscriptionHandler.hpp, Duration: 209ms
+2026-01-18 19:10:54,324 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/ISubscriptionHandler.hpp
+2026-01-18 19:10:54,525 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/ISubscriptionHandler.hpp
+2026-01-18 19:10:54,682 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:54,845 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:55,124 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:55,300 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:55,484 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/websocket-subscription.json
+2026-01-18 19:10:55,736 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:10:56,124 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/websocket-subscription.json, Duration: 215ms
+2026-01-18 19:10:56,294 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/websocket-subscription.json
+2026-01-18 19:10:56,463 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/websocket-subscription.json
+2026-01-18 19:10:56,631 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:56,783 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:57,026 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:57,239 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:57,422 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/CONTRIBUTING.md
+2026-01-18 19:10:57,683 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:10:58,041 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: CONTRIBUTING.md, Duration: 195ms
+2026-01-18 19:10:58,226 - Knowledge - INFO - persist search terms embedding for CONTRIBUTING.md
+2026-01-18 19:10:58,438 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/CONTRIBUTING.md
+2026-01-18 19:10:58,644 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:58,844 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:59,127 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:10:59,292 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:10:59,473 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/CMakeLists.txt
+2026-01-18 19:10:59,723 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-18 19:11:00,112 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/CMakeLists.txt, Duration: 216ms
+2026-01-18 19:11:00,286 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/CMakeLists.txt
+2026-01-18 19:11:00,468 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/CMakeLists.txt
+2026-01-18 19:11:00,639 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:00,812 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:01,060 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:01,264 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:01,422 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/README.md
+2026-01-18 19:11:01,691 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 91ms
+2026-01-18 19:11:02,070 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/README.md, Duration: 211ms
+2026-01-18 19:11:02,274 - Knowledge - INFO - persist search terms embedding for data/vss-core/README.md
+2026-01-18 19:11:02,469 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/README.md
+2026-01-18 19:11:02,714 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:02,913 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:03,195 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:03,360 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:03,542 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-client/README.md
+2026-01-18 19:11:03,808 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2026-01-18 19:11:04,245 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-client/README.md, Duration: 204ms
+2026-01-18 19:11:04,425 - Knowledge - INFO - persist search terms embedding for kuksa-client/README.md
+2026-01-18 19:11:04,618 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-client/README.md
+2026-01-18 19:11:04,802 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:05,000 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:05,317 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:05,475 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:05,675 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/kuksa_config/gpsd_feeder.ini
+2026-01-18 19:11:05,981 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 132ms
+2026-01-18 19:11:06,442 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/kuksa_config/gpsd_feeder.ini, Duration: 222ms
+2026-01-18 19:11:06,617 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/kuksa_config/gpsd_feeder.ini
+2026-01-18 19:11:06,788 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/kuksa_config/gpsd_feeder.ini
+2026-01-18 19:11:06,956 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:07,160 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:07,436 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:07,607 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:07,784 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/JsonResponses.hpp
+2026-01-18 19:11:08,083 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 103ms
+2026-01-18 19:11:08,551 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/JsonResponses.hpp, Duration: 251ms
+2026-01-18 19:11:08,741 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/JsonResponses.hpp
+2026-01-18 19:11:08,916 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/JsonResponses.hpp
+2026-01-18 19:11:09,094 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:09,260 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:09,564 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:09,733 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:09,880 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_4.0.json
+2026-01-18 19:11:10,151 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 93ms
+2026-01-18 19:11:10,527 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_4.0.json, Duration: 210ms
+2026-01-18 19:11:10,783 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_4.0.json
+2026-01-18 19:11:11,016 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_4.0.json
+2026-01-18 19:11:11,205 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:11,376 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:11,640 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:11,807 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:12,048 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.2.json
+2026-01-18 19:11:12,344 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 105ms
+2026-01-18 19:11:12,815 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: data/vss-core/vss_release_2.2.json, Duration: 217ms
+2026-01-18 19:11:12,982 - Knowledge - INFO - persist search terms embedding for data/vss-core/vss_release_2.2.json
+2026-01-18 19:11:13,184 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/data/vss-core/vss_release_2.2.json
+2026-01-18 19:11:13,391 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:13,554 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:13,824 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:14,028 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:14,185 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/stress.py
+2026-01-18 19:11:14,467 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 88ms
+2026-01-18 19:11:14,875 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/stresstest/stress.py, Duration: 218ms
+2026-01-18 19:11:15,041 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/stresstest/stress.py
+2026-01-18 19:11:15,265 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/stresstest/stress.py
+2026-01-18 19:11:15,468 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:15,658 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:15,918 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:16,094 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:16,256 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/config_grpc_client.ini
+2026-01-18 19:11:16,515 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:11:16,916 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/config_grpc_client.ini, Duration: 187ms
+2026-01-18 19:11:17,075 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/config_grpc_client.ini
+2026-01-18 19:11:17,242 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/config_grpc_client.ini
+2026-01-18 19:11:17,441 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:17,614 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:17,878 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:18,046 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:18,215 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IAuthenticator.hpp
+2026-01-18 19:11:18,537 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 123ms
+2026-01-18 19:11:19,144 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IAuthenticator.hpp, Duration: 430ms
+2026-01-18 19:11:19,308 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IAuthenticator.hpp
+2026-01-18 19:11:19,463 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IAuthenticator.hpp
+2026-01-18 19:11:19,635 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:19,815 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:20,088 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:20,331 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:20,501 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/config.py
+2026-01-18 19:11:20,811 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 114ms
+2026-01-18 19:11:21,187 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/config.py, Duration: 193ms
+2026-01-18 19:11:21,364 - Knowledge - INFO - persist search terms embedding for test/stresstest/config.py
+2026-01-18 19:11:21,587 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/config.py
+2026-01-18 19:11:21,750 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:21,921 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:22,272 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:22,479 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:22,654 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/README.md
+2026-01-18 19:11:22,911 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 108ms
+2026-01-18 19:11:23,323 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: test/stresstest/README.md, Duration: 219ms
+2026-01-18 19:11:23,517 - Knowledge - INFO - persist search terms embedding for test/stresstest/README.md
+2026-01-18 19:11:23,741 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/test/stresstest/README.md
+2026-01-18 19:11:23,978 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:24,134 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:24,414 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:24,570 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:24,743 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/ILoggerMock.hpp
+2026-01-18 19:11:25,045 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 96ms
+2026-01-18 19:11:25,511 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/test/unit-test/mock/ILoggerMock.hpp, Duration: 234ms
+2026-01-18 19:11:25,665 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/test/unit-test/mock/ILoggerMock.hpp
+2026-01-18 19:11:25,828 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/test/unit-test/mock/ILoggerMock.hpp
+2026-01-18 19:11:26,004 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:26,187 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:26,482 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:26,682 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:26,838 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/WebSockHttpFlexServer.hpp
+2026-01-18 19:11:27,113 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 97ms
+2026-01-18 19:11:27,483 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/WebSockHttpFlexServer.hpp, Duration: 212ms
+2026-01-18 19:11:27,671 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/WebSockHttpFlexServer.hpp
+2026-01-18 19:11:27,870 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/WebSockHttpFlexServer.hpp
+2026-01-18 19:11:28,040 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:28,218 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:28,463 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:28,629 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:28,789 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/README.md
+2026-01-18 19:11:29,105 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 86ms
+2026-01-18 19:11:29,539 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/README.md, Duration: 275ms
+2026-01-18 19:11:29,694 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/README.md
+2026-01-18 19:11:29,859 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/README.md
+2026-01-18 19:11:30,031 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:30,245 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:30,487 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:30,665 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:30,852 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/main.cpp
+2026-01-18 19:11:31,103 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 92ms
+2026-01-18 19:11:31,669 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/src/main.cpp, Duration: 389ms
+2026-01-18 19:11:31,842 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/src/main.cpp
+2026-01-18 19:11:31,995 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/src/main.cpp
+2026-01-18 19:11:32,160 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:32,311 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:32,567 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:32,743 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:32,907 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/settings.js
+2026-01-18 19:11:33,194 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 101ms
+2026-01-18 19:11:33,609 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/mqtt/settings.js, Duration: 231ms
+2026-01-18 19:11:33,770 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/mqtt/settings.js
+2026-01-18 19:11:33,932 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/settings.js
+2026-01-18 19:11:34,107 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:34,337 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:34,640 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:34,801 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:34,972 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/package.json
+2026-01-18 19:11:35,262 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 87ms
+2026-01-18 19:11:35,627 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/mqtt/package.json, Duration: 204ms
+2026-01-18 19:11:35,815 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/mqtt/package.json
+2026-01-18 19:11:36,001 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/mqtt/package.json
+2026-01-18 19:11:36,174 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:36,386 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:36,649 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:36,810 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:36,960 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/MQTTPublisher.hpp
+2026-01-18 19:11:37,291 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 119ms
+2026-01-18 19:11:37,748 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/MQTTPublisher.hpp, Duration: 228ms
+2026-01-18 19:11:37,946 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/MQTTPublisher.hpp
+2026-01-18 19:11:38,156 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/MQTTPublisher.hpp
+2026-01-18 19:11:38,334 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:38,536 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:38,817 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:38,984 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:39,177 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/quickstart.md
+2026-01-18 19:11:39,475 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 89ms
+2026-01-18 19:11:39,879 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: doc/quickstart.md, Duration: 216ms
+2026-01-18 19:11:40,074 - Knowledge - INFO - persist search terms embedding for doc/quickstart.md
+2026-01-18 19:11:40,253 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/doc/quickstart.md
+2026-01-18 19:11:40,454 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:40,622 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:40,896 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:41,064 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:41,287 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/kuksa_config/obdfeeder.ini
+2026-01-18 19:11:41,568 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 107ms
+2026-01-18 19:11:41,994 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa_apps/node-red/kuksa_config/obdfeeder.ini, Duration: 236ms
+2026-01-18 19:11:42,162 - Knowledge - INFO - persist search terms embedding for kuksa_apps/node-red/kuksa_config/obdfeeder.ini
+2026-01-18 19:11:42,331 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa_apps/node-red/kuksa_config/obdfeeder.ini
+2026-01-18 19:11:42,514 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:42,716 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:42,983 - Knowledge - INFO - Found code-base-name: https://github.com/DarssiniRamesh/kuksa-val.git:kavia-master
+2026-01-18 19:11:43,236 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f75cb4e6290>
+2026-01-18 19:11:43,422 - Knowledge - INFO - persist ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IVssCommandProcessor.hpp
+2026-01-18 19:11:43,714 - Knowledge - INFO - [MONGODB_OP] Completed: persist, Collection: file_info, Duration: 122ms
+2026-01-18 19:11:44,099 - Knowledge - INFO - [REDIS_OP] Completed: store_embedding, Key: kuksa-val-server/include/interface/IVssCommandProcessor.hpp, Duration: 200ms
+2026-01-18 19:11:44,294 - Knowledge - INFO - persist search terms embedding for kuksa-val-server/include/interface/IVssCommandProcessor.hpp
+2026-01-18 19:11:44,489 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/307413/b4824bb/kuksa-val/kuksa-val-server/include/interface/IVssCommandProcessor.hpp
+2026-01-18 19:11:44,648 - Knowledge - INFO - Loaded 150 files from persisted knowledge
+2026-01-18 19:11:44,859 - Knowledge - INFO - load persisted knowledge: end
+2026-01-18 19:11:45,073 - Knowledge - INFO - Redis support added with prefix knowledge:b4824bb:
+2026-01-18 19:11:45,396 - Knowledge - INFO - Starting knowledge initialization for ID: Il7kyB-b4824bb
+2026-01-18 19:11:45,606 - Knowledge - INFO - 🔍 Checking Redis for build_id: b4824bb
+2026-01-18 19:11:45,789 - Knowledge - INFO - 🔍 Full session ID: Il7kyB-b4824bb
+2026-01-18 19:11:45,954 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b4824bb:
+2026-01-18 19:11:46,139 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-18 19:11:46,316 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-18 19:11:46,481 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b4824bb
+2026-01-18 19:11:46,678 - Knowledge - INFO - ✅ Redis cache found! Loading knowledge...
+2026-01-18 19:11:46,853 - Knowledge - INFO - ✅ Successfully loaded from Redis: 150 files
+2026-01-18 19:11:47,027 - Knowledge - INFO - ✅ Redis load complete: 150 files in 0.89s
+2026-01-18 19:11:47,191 - Knowledge - INFO - ⚡ Total Redis path: 0.89s (vs ~300s from disk)
+2026-01-18 19:11:47,371 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-18 19:11:47,691 - Knowledge - INFO - Knowledge saved to Redis successfully
